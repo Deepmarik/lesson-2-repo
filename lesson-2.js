@@ -34,10 +34,18 @@ b+2 , d=4*/
     2. х=1+4 х=5*/
 
 //Задание 3.
-let e=1, f=1, result=0;
-e=prompt("Введите первое число: ");
-f=prompt("Введите второе число: ");
-if e>=0 || f>=0 
-result=e-f;
-alert("Разность =: "+result);
-
+let e = 1,
+	f = 1,
+	c = 1;
+e = parseInt(prompt("Введите первое число: "));
+f = parseInt(prompt("Введите второе число: "));
+if (e >= 0 && f >= 0) {
+	c = e - f;
+	alert("Разность равна  " + c);
+} else if (e * f < 0) {
+	c = parseInt(e + f);
+	alert("Сумма равна  "+c);
+} else {
+	c = e * f;
+	alert("Произведение равно  " + c);
+};
