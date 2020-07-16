@@ -1,13 +1,14 @@
 "use strict";
 //Задание 1.
 //пример 1
-
+// alert("Задание 1");
 /*let a=1,  b=1, c, d;
 c=++a;
 alert(c); //c=2
 /* c=2  , тк к переменной с применяется префиксный инкремент, который увеличивает ее значение на "1".*/
 
 //пример 2
+
 //d=b++;
 //alert(d); //d=1
 /*результат: d=1, тк к операнду применен постфиксный инкремент, который увелиичивает операнд на 1, но результатом будет первоначальное значение d.*/
@@ -26,6 +27,7 @@ b+2 , d=4*/
 //alert(b);// b=3 в примере 2  и 4 к операнду b применилась операция постфиксного инкремента
 
 //Задание 2.
+//alert("Задание 2");
 //a = 2; 
 //let x = 1 + (a *= 2);
 //alert(a);
@@ -34,6 +36,7 @@ b+2 , d=4*/
     2. х=1+4 х=5*/
 
 //Задание 3.
+/*alert("Задание 3");
 let e = 1,
 	f = 1,
 	c = 1;
@@ -50,6 +53,7 @@ if (e >= 0 && f >= 0) {
 	alert("Произведение равно  " + c);
 };
 //Задание 4.
+alert("Задание 4");
 let x, m, n;
 m = parseInt(prompt("Введите первое число: "));
 n = parseInt(prompt("Введите второе число: "));
@@ -77,3 +81,29 @@ function division(m, n) {
 };
 x = division(m, n);
 alert("Частное равно  " + x);
+*/
+//Задание 5
+alert("Задание 5");
+let arg1, arg2, result, operation;
+arg1 = parseInt(prompt("Введите первое число: "));
+arg2 = parseInt(prompt("Введите второе число: "));
+operation = prompt("Выберите одно из арифметических действий (сложение, вычитание, деление, умножение):  ");
+
+function mathOperation(arg1, arg2, operation) {
+	switch (operation) {
+		case 'сложение':
+			return (arg1 + arg2);
+			break;
+		case 'вычитание':
+			return (arg1 - arg2);
+			break;
+		case 'деление':
+			return (arg1 / arg2);
+			break;
+		case 'умножение':
+			return (arg1 * arg2);
+			break;
+	}
+}
+result = mathOperation(arg1, arg2, operation);
+alert(result);
