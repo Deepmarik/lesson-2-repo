@@ -44,8 +44,36 @@ if (e >= 0 && f >= 0) {
 	alert("Разность равна  " + c);
 } else if (e * f < 0) {
 	c = parseInt(e + f);
-	alert("Сумма равна  "+c);
+	alert("Сумма равна  " + c);
 } else {
 	c = e * f;
 	alert("Произведение равно  " + c);
 };
+//Задание 4.
+let x, m, n;
+m = parseInt(prompt("Введите первое число: "));
+n = parseInt(prompt("Введите второе число: "));
+//Сумма
+function Summa(m, n) {
+	return (m + n);
+};
+x = Summa(m, n);
+alert("Сумма равна  " + x);
+//Разность
+function difference(m, n) {
+	return (m - n);
+};
+x = difference(m, n);
+alert("Разность равна  " + x);
+//Произведение
+function composition(m, n) {
+	return (m * n);
+};
+x = composition(m, n);
+alert("Произведение равно  " + x);
+//Деление
+function division(m, n) {
+	return (m / n);
+};
+x = division(m, n);
+alert("Частное равно  " + x);
