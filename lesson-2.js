@@ -126,6 +126,7 @@ switch (rub.charAt(i - 1)) {
 	case b = 8:
 	case b = 9:
 	case b = 0:
+	
 		break;
 }
 alert("На счет поступило " + rub + " рублей");
