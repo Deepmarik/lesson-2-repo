@@ -39,24 +39,24 @@ alert(x);
 
 //Задание 3.
 alert("Задание 3");
-let e = 1,
-	f = 1,
-	c = 1;
+let e = 0, f=0, k=0;
 e = parseInt(prompt("Введите первое число: "));
 f = parseInt(prompt("Введите второе число: "));
 if (e >= 0 && f >= 0) {
-	c = e - f;
-	alert("Разность равна  " + c); /*произведение двух чисел с разными знаками всегда отрицательно*/
+	k = e - f;
+	alert("Разность равна  " + k); /*произведение двух чисел с разными знаками всегда отрицательно*/
 } else if (e * f < 0) {
-	c = parseInt(e + f);
-	alert("Сумма равна  " + c);
+	k = parseInt(e + f);
+	alert("Сумма равна  " + k);
 } else {
-	c = e * f;
-	alert("Произведение равно  " + c);
+	k = e * f;
+	alert("Произведение равно  " + k);
 };
 //Задание 4.
 alert("Задание 4");
-let x, m, n;
+x=0;
+let m=0; 
+let n=0;
 m = parseInt(prompt("Введите первое число: "));
 n = parseInt(prompt("Введите второе число: "));
 //Сумма
@@ -86,7 +86,7 @@ alert("Частное равно  " + x);
 
 //Задание 5
 
-/alert("Задание 5");
+alert("Задание 5");
 let arg1, arg2, result, operation;
 arg1 = parseInt(prompt("Введите первое число: "));
 arg2 = parseInt(prompt("Введите второе число: "));
@@ -112,7 +112,8 @@ result = mathOperation(arg1, arg2, operation);
 alert(result);
 //Задание 6
 alert("Задание 6");
-let rub, b, i = 0;
+let rub,  i = 0;
+b=0;
 rub = String(prompt("Какую сумму Вы хотите внести на счет?"));
 i = rub.length;
 //alert(i);
