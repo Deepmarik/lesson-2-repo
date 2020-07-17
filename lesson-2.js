@@ -110,7 +110,7 @@ function mathOperation(arg1, arg2, operation) {
 }
 result = mathOperation(arg1, arg2, operation);
 alert(result);
-//Задание 6
+//Задание 6 
 alert("Задание 6");
 let rub,  i = 0;
 b=0;
@@ -126,6 +126,8 @@ switch (rub.charAt(i - 1)) {
 	case b = 8:
 	case b = 9:
 	case b = 0:
+	
 		break;
 }
 alert("На счет поступило " + rub + " рублей");
+//принцип поняла, не успела реализовать оставшееся, нерпеменно допишу
